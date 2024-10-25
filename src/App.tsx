@@ -1,11 +1,14 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import React from 'react';
+import "./index.css";
+import NavBar from "./components/NavBar/NavBar";
 
 const App: React.FC = () => {
     return (
         <Router>
-            <div className="bg-placeholder bg-cover bg-no-repeat bg-center bg-fixed">
-                <a> Hello World! </a>
+            <NavBar/>
+            <div className="bg-gray-500">
+                <a className="font-bold font-serif"> Hello World! </a>
             </div>
         </Router>
     );
