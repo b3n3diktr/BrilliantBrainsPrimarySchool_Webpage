@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Logo from '../../pictures/Logo.png'
+import Logo from "../../pictures/Logo.png";
 
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const NavBar = () => {
             <div className="container mx-auto flex items-center justify-between p-4">
                 {/* Logo */}
                 <div>
-                    <Link to="/"> <img src={Logo} alt="Logo" className="h-16 w-auto mr-2"/> </Link>
+                    <img src={Logo} alt="Logo" className="h-16 w-auto mx-auto md:mx-0"/>
                 </div>
 
                 {/* Desktop Menu */}
