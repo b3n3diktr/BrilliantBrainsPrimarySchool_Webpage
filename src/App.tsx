@@ -10,13 +10,15 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollTop/ScrollTop";
+import Imprint from './components/Imprint/Imprint';
+import Home from './components/Home/Home';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 
 const App: React.FC = () => {
     return (
         <Router>
             <ScrollToTop />
             <NavBar />
-            <DonateSection />
             <div className="bg-gray-100 min-h-screen">
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -26,34 +28,12 @@ const App: React.FC = () => {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/imprint" element={<Imprint />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 </Routes>
             </div>
             <Footer />
         </Router>
-    );
-};
-
-const Home: React.FC = () => (
-    <div className="text-center py-20">
-        <h1 className="text-4xl font-bold">Welcome</h1>
-        <p className="mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores exercitationem maxime neque nulla obcaecati officia officiis quaerat sequi temporibus vel? Aliquid amet dolorum, fugit id iure laudantium libero quo veritatis!</p>
-    </div>
-);
-
-const DonateSection: React.FC = () => {
-    return (
-        <div className="relative bg-gray-300 h-[500px] flex items-center justify-center text-center">
-            <div className="absolute inset-0 bg-black opacity-40"></div>
-
-            <div className="relative z-10">
-                <h1 className="text-4xl font-bold text-white">
-                    Help a child in Uganda <span className="text-yellow-400">REACH</span> for a better future.
-                </h1>
-                <button className="mt-8 px-6 py-3 bg-red-500 text-white font-semibold rounded-md hover:bg-red-600">
-                    Sponsor A Student
-                </button>
-            </div>
-        </div>
     );
 };
 

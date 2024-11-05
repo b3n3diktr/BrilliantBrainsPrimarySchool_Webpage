@@ -14,7 +14,8 @@ const NavBar = () => {
             <div className="container mx-auto flex items-center justify-between p-4">
                 {/* Logo */}
                 <div className="text-xl font-bold">
-                    <Link to="/" className="text-gray-800">Logo</Link>
+                    {/*<Link to="/" className="text-gray-800">Logo</Link>*/}
+                    <img src="src/pictures/Logo.jpeg" alt="Logo" className="h-10 w-auto mr-2"/>
                 </div>
 
                 {/* Desktop Menu */}

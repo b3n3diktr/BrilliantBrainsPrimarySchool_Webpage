@@ -1,7 +1,6 @@
-// Footer.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaTiktok} from 'react-icons/fa';
+import { FaInstagram, FaTiktok} from 'react-icons/fa';
 
 const Footer: React.FC = () => {
     return (
@@ -25,6 +24,8 @@ const Footer: React.FC = () => {
                         <li><Link to="/get-involved" className="hover:text-gray-200">Get Involved</Link></li>
                         <li><Link to="/about" className="hover:text-gray-200">About</Link></li>
                         <li><Link to="/contact" className="hover:text-gray-200">Contact</Link></li>
+                        <li><Link to="/imprint" className="hover:text-gray-200">Imprint</Link></li>
+                        <li><Link to="/privacy-policy" className="hover:text-gray-200">Privacy Policy</Link></li>
                     </ul>
                 </div>
 
