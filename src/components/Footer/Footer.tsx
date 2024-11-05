@@ -1,18 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTiktok} from 'react-icons/fa';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import Logo from "../../pictures/Logo.png";
 
 const Footer: React.FC = () => {
     return (
         <footer className="bg-gray-800 text-white py-10">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:text-left text-center">
 
                 {/* Logo and Description */}
-                <div>
-                    <h2 className="text-2xl font-bold">Logo</h2>
+                <div className="md:text-left text-center">
+                    <Link to="/">
+                        <img src={Logo} alt="Logo" className="h-40 w-auto mx-auto md:mx-0" />
+                    </Link>
                     <p className="mt-4 text-gray-400">
                         Founded in 2016 to support vulnerable children acquire a quality
-                        education.</p>
+                        education.
+                    </p>
                 </div>
 
                 {/* Navigation Links */}

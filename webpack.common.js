@@ -22,16 +22,18 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
-                test: /\.svg$/,
-                use: ['@svgr/webpack'],
+                test: /\.(png|jpe?g|gif|svg)$/i,  // Regex to match image extensions
+                type: 'asset/resource',           // Use asset/resource to emit a file
+                generator: {
+                    filename: 'images/[name][hash][ext]', // Customize the output path
+                },
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/public/index.html', // Updated path
-            filename: 'index.html',              // Output filename
+            template: './src/public/index.html',
+            filename: 'index.html',
         }),
     ],
-
 };

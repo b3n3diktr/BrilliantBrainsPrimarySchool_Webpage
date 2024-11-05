@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Logo from '../../pictures/Logo.png'
 
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,9 +14,8 @@ const NavBar = () => {
         <nav className="sticky top-0 w-full z-50 bg-white shadow-md">
             <div className="container mx-auto flex items-center justify-between p-4">
                 {/* Logo */}
-                <div className="text-xl font-bold">
-                    {/*<Link to="/" className="text-gray-800">Logo</Link>*/}
-                    <img src="src/pictures/Logo.jpeg" alt="Logo" className="h-10 w-auto mr-2"/>
+                <div>
+                    <Link to="/"> <img src={Logo} alt="Logo" className="h-16 w-auto mr-2"/> </Link>
                 </div>
 
                 {/* Desktop Menu */}
