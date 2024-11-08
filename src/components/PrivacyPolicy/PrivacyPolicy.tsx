@@ -60,7 +60,7 @@ const PrivacyPolicy: React.FC = () => {
                     Users have the right to access, correct, delete, or restrict the processing of their personal data. They may also object to data processing or request data portability.
                 </p>
 
-                {/* Section 7: Contact Information for Privacy Inquiries */}
+                {/* Section 7: Community Information for Privacy Inquiries */}
                 <h3 className="text-xl font-semibold text-gray-700 mt-8">7. Contact Information for Privacy Inquiries</h3>
                 <p className="mt-4 text-gray-700">
                     For any privacy inquiries or data protection concerns, please contact:

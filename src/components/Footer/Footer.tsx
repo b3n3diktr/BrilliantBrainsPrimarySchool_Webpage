@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
 
                 {/* Logo and Description */}
                 <div className="md:text-left text-center">
-                    <Link to="/">
+                    <Link to="/home">
                         <img src={Logo} alt="Logo" className="h-40 w-auto mx-auto md:mx-0" />
                     </Link>
                     <p className="mt-4 text-gray-400">
