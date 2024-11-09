@@ -1,18 +1,18 @@
 import React from 'react';
-import Boys_Patron_Michael from "../../../pictures/Staff/Boys_Patron_Michael.png";
-import CoDirector_Esther from "../../../pictures/Staff/Co-Director_Esther.png";
-import Cook_Robert from "../../../pictures/Staff/Cook_Robert.png";
-import Cooking_Chef_Grandma from "../../../pictures/Staff/Cooking_Chef_Grandma.png";
-import Director_Gideon from "../../../pictures/Staff/Director_Gideon.png";
-import Driver_Albert from "../../../pictures/Staff/Driver_Albert.png";
-import Headteacher_Daniel from "../../../pictures/Staff/Headteacher_Daniel.png";
-import School_Doctor_Susan from "../../../pictures/Staff/School_Doctor_Susan.png";
-import Teacher_Gloria from "../../../pictures/Staff/Teacher_Gloria.png";
-import Tr_Ben from "../../../pictures/Staff/Tr._Ben.png";
-import Tr_Francis from "../../../pictures/Staff/Tr._Francis.png";
-import Tr_Janet from "../../../pictures/Staff/Tr._Janet.png";
-import Tr_Patience from "../../../pictures/Staff/Tr._Patience.png";
-import Tr_Stellah from "../../../pictures/Staff/Tr._Stellah.png";
+import Boys_Patron_Michael from "../../../pictures/Staff_old/Boys_Patron_Michael.png";
+import CoDirector_Esther from "../../../pictures/Staff_old/Co-Director_Esther.png";
+import Cook_Robert from "../../../pictures/Staff_old/Cook_Robert.png";
+import Cooking_Chef_Grandma from "../../../pictures/Staff_old/Cooking_Chef_Grandma.png";
+import Director_Gideon from "../../../pictures/Staff_old/Director_Gideon.png";
+import Driver_Albert from "../../../pictures/Staff_old/Driver_Albert.png";
+import Headteacher_Daniel from "../../../pictures/Staff_old/Headteacher_Daniel.png";
+import School_Doctor_Susan from "../../../pictures/Staff_old/School_Doctor_Susan.png";
+import Teacher_Gloria from "../../../pictures/Staff_old/Teacher_Gloria.png";
+import Tr_Ben from "../../../pictures/Staff_old/Tr._Ben.png";
+import Tr_Francis from "../../../pictures/Staff_old/Tr._Francis.png";
+import Tr_Janet from "../../../pictures/Staff_old/Tr._Janet.png";
+import Tr_Patience from "../../../pictures/Staff_old/Tr._Patience.png";
+import Tr_Stellah from "../../../pictures/Staff_old/Tr._Stellah.png";
 
 const Staff: React.FC = () => {
     return (
