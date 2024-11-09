@@ -58,7 +58,9 @@ jobs:
           git config --local user.name "GitHub Action"
           git add VERSION
           git commit -m "Bump version to ${{ steps.increment_version.outputs.new_version }}"
+          git pull --rebase origin master
           git push
+
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
