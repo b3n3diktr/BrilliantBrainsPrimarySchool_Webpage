@@ -3,7 +3,6 @@ import React from 'react';
 import './index.css';
 import NavBar from './components/NavBar/NavBar';
 import Academics from './components/Academics/Academics';
-import About from './components/About/About';
 import Community from './components/Community/Community';
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollTop/ScrollTop";
@@ -14,6 +13,7 @@ import Staff from './components/About/Staff/Staff';
 import History from "./components/About/History/History";
 import Projects from "./components/Projects/Projects";
 import Sponsorship from "./components/Sponsorship/Sponsorship";
+import Volunteering from "./components/Volunteering/Volunteering";
 
 const App: React.FC = () => {
     return (
@@ -26,13 +26,13 @@ const App: React.FC = () => {
                     <Route path="/" element={<Navigate to="/home" />} />
                     <Route path="/sponsorship" element={<Sponsorship />} />
                     <Route path="/academics" element={<Academics />} />
-                    <Route path="/about" element={<About />} />
                     <Route path="/community" element={<Community />} />
                     <Route path="/imprint" element={<Imprint />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                     <Route path="/about/staff" element={<Staff />} />
                     <Route path="/about/history" element={<History />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/volunteering" element={<Volunteering />} />
                     <Route path="*" element={<Home />} />
                 </Routes>
             </div>
