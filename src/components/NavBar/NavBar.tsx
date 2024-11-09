@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-6 text-gray-600">
+                <div className="hidden md:flex space-x-6 text-gray-600 mx-auto">
                     <Link to="/projects" className="hover:text-gray-800">Projects</Link>
                     <Link to="/sponsorship" className="hover:text-gray-800">Sponsorship</Link>
                     <Link to="/academics" className="hover:text-gray-800">Academics</Link>
@@ -40,7 +40,7 @@ const NavBar: React.FC = () => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <a className="hover:text-gray-800">About Us</a>
+                        <a className="hover:text-gray-800 cursor-pointer">About Us</a>
 
                         {/* Dropdown Menu */}
                         {dropdownOpen && (
@@ -56,13 +56,11 @@ const NavBar: React.FC = () => {
                     </div>
 
                     <Link to="/community" className="hover:text-gray-800">Community</Link>
+                    <Link to="/volunteering" className="hover:text-gray-800">Volunteering</Link>
                 </div>
 
-                {/* Donate Button and Mobile Menu Icon */}
-                <div className="flex items-center space-x-4">
-                    <Link to="/donate" className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
-                        Donate
-                    </Link>
+                {/* Mobile Menu Icon */}
+                <div className="flex items-center">
                     <button onClick={toggleMenu} className="md:hidden text-gray-800 focus:outline-none">
                         {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                     </button>
@@ -80,7 +78,7 @@ const NavBar: React.FC = () => {
                             <Link to="/sponsorship" className="block py-2 text-center w-full border-b border-gray-300 hover:bg-gray-200" onClick={toggleMenu}>Sponsorship</Link>
                         </li>
                         <li className="w-full">
-                            <Link to="/get-involved" className="block py-2 text-center w-full border-b border-gray-300 hover:bg-gray-200" onClick={toggleMenu}>Get Involved</Link>
+                            <Link to="/academics" className="block py-2 text-center w-full border-b border-gray-300 hover:bg-gray-200" onClick={toggleMenu}>Academics</Link>
                         </li>
 
                         {/* Mobile About Dropdown */}
@@ -97,7 +95,10 @@ const NavBar: React.FC = () => {
                         </li>
 
                         <li className="w-full">
-                            <Link to="/Community" className="block py-2 text-center w-full hover:bg-gray-200" onClick={toggleMenu}>Community</Link>
+                            <Link to="/community" className="block py-2 text-center w-full border-b border-gray-300 hover:bg-gray-200" onClick={toggleMenu}>Community</Link>
+                        </li>
+                        <li className="w-full">
+                            <Link to="/volunteering" className="block py-2 text-center w-full" onClick={toggleMenu}>Volunteering</Link>
                         </li>
                     </ul>
                 </div>
