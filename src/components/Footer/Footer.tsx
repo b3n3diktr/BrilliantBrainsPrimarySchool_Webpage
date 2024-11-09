@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import { FaInstagram, FaTiktok, FaFacebook } from 'react-icons/fa';
 import Logo from "../../pictures/Logo.png";
 
 const Footer: React.FC = () => {
@@ -8,32 +8,30 @@ const Footer: React.FC = () => {
         <footer className="bg-gray-800 text-white py-10">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:text-left text-center">
 
-                {/* Logo and Description */}
                 <div className="md:text-left text-center">
-                    <Link to="/home">
-                        <img src={Logo} alt="Logo" className="h-40 w-auto mx-auto md:mx-0" />
-                    </Link>
+                    <a href="/home">
+                        <img src="/images/Logo54181696849c1860afb9.png" alt="Logo" className="h-40 w-auto mx-auto md:mx-0" />
+                    </a>
                     <p className="mt-4 text-gray-400">
-                        Founded in 2016 to support vulnerable children acquire a quality
-                        education.
+                        Founded in 2016 to support vulnerable children acquire a quality education.
                     </p>
                 </div>
 
-                {/* Navigation Links */}
                 <div>
                     <h3 className="text-xl font-semibold">Quick Links</h3>
                     <ul className="mt-4 space-y-2 text-gray-400">
-                        <li><Link to="/programs" className="hover:text-gray-200">Programs</Link></li>
-                        <li><Link to="/support" className="hover:text-gray-200">Support Us</Link></li>
-                        <li><Link to="/get-involved" className="hover:text-gray-200">Get Involved</Link></li>
-                        <li><Link to="/about" className="hover:text-gray-200">About</Link></li>
-                        <li><Link to="/contact" className="hover:text-gray-200">Contact</Link></li>
-                        <li><Link to="/imprint" className="hover:text-gray-200">Imprint</Link></li>
-                        <li><Link to="/privacy-policy" className="hover:text-gray-200">Privacy Policy</Link></li>
+                        <li><a className="hover:text-gray-200" href="/projects">Projects</a></li>
+                        <li><a className="hover:text-gray-200" href="/sponsorship">Sponsorship</a></li>
+                        <li><a className="hover:text-gray-200" href="/academics">Academics</a></li>
+                        <li><a className="hover:text-gray-200" href="/about/staff">Staff</a></li>
+                        <li><a className="hover:text-gray-200" href="/about/history">History</a></li>
+                        <li><a className="hover:text-gray-200" href="/community">Community</a></li>
+                        <li><a className="hover:text-gray-200" href="/volunteering">Volunteering</a></li>
+                        <li><a className="hover:text-gray-200" href="/imprint">Imprint</a></li>
+                        <li><a className="hover:text-gray-200" href="/privacy-policy">Privacy Policy</a></li>
                     </ul>
                 </div>
 
-                {/* Social Media Links */}
                 <div>
                     <h3 className="text-xl font-semibold">Follow Us</h3>
                     <div className="mt-4 flex justify-center md:justify-start space-x-4">
@@ -42,6 +40,9 @@ const Footer: React.FC = () => {
                         </a>
                         <a href="https://www.instagram.com/brilliantbrains_school/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                             <FaInstagram size={24} />
+                        </a>
+                        <a href="https://web.facebook.com/profile.ph?id=100023067344744" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                            <FaFacebook size={24} />
                         </a>
                     </div>
                 </div>
