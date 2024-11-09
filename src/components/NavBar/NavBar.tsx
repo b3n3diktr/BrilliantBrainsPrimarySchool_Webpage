@@ -12,12 +12,12 @@ const NavBar: React.FC = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     const handleMouseEnter = () => {
-        clearTimeout(dropdownTimeout); // Clear any existing timeout to prevent accidental close
-        setDropdownOpen(true); // Show dropdown immediately on hover
+        clearTimeout(dropdownTimeout);
+        setDropdownOpen(true);
     };
 
     const handleMouseLeave = () => {
-        dropdownTimeout = setTimeout(() => setDropdownOpen(false), 300); // Close after a delay
+        dropdownTimeout = setTimeout(() => setDropdownOpen(false), 200);
     };
 
     return (
@@ -40,7 +40,7 @@ const NavBar: React.FC = () => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link to="/about" className="hover:text-gray-800">About Us</Link>
+                        <a className="hover:text-gray-800">About Us</a>
 
                         {/* Dropdown Menu */}
                         {dropdownOpen && (
@@ -89,7 +89,7 @@ const NavBar: React.FC = () => {
                             {mobileSubMenuOpen && (
                                 <ul className="w-full bg-gray-200">
                                     <li className="border-t border-gray-300">
-                                        <Link to="/about/team" className="block py-2 text-center w-full hover:bg-gray-300" onClick={toggleMenu}>Staff</Link>
+                                        <Link to="/about/staff" className="block py-2 text-center w-full hover:bg-gray-300" onClick={toggleMenu}>Staff</Link>
                                         <Link to="/about/history" className="block py-2 text-center w-full hover:bg-gray-300" onClick={toggleMenu}>History</Link>
                                     </li>
                                 </ul>

@@ -12,7 +12,7 @@ import Home from './components/Home/Home';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import Staff from './components/About/Staff/Staff';
 import History from "./components/About/History/History";
-import Projects from "./components/About/Projects/Projects";
+import Projects from "./components/Projects/Projects";
 import Sponsorship from "./components/Sponsorship/Sponsorship";
 
 const App: React.FC = () => {
