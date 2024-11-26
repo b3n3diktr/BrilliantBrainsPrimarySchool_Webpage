@@ -1,5 +1,6 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
+import Sponsor_ship from "../../pictures/Sponsorship.jpg"
 
 const Sponsorship: React.FC = () => {
     const navigate = useNavigate();
@@ -7,8 +8,17 @@ const Sponsorship: React.FC = () => {
     return (
         <div className="bg-gray-50 min-h-screen">
             {/* Page Header */}
-            <header className="relative bg-gray-300 h-[300px] flex items-center justify-center text-center">
+            <header className="relative h-[300px] flex items-center justify-center text-center">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: `url(${Sponsor_ship})`,
+                        filter: "blur(2px)",
+                        backgroundPosition: "center"
+                    }}></div>
+
                 <div className="absolute inset-0 bg-black opacity-40"></div>
+
                 <div className="relative z-10 text-white">
                     <h1 className="text-4xl md:text-5xl font-bold">Child Sponsorship Program</h1>
                     <p className="mt-4 max-w-xl mx-auto text-lg">
@@ -16,6 +26,7 @@ const Sponsorship: React.FC = () => {
                     </p>
                 </div>
             </header>
+
 
             {/* Donate Button */}
             <section className="py-12 px-8 text-center">

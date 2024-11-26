@@ -1,10 +1,19 @@
 import React from 'react';
+import Background from "../../pictures/Computer_2.jpeg"
 
 const Projects: React.FC = () => {
     return (
         <div className="bg-gray-50 min-h-screen">
             {/* Page Header */}
             <header className="relative bg-gray-300 h-[300px] flex items-center justify-center text-center">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: `url(${Background})`,
+                        filter: "blur(2px)",
+                    }}></div>
+
+                <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative z-10 text-white">
                     <h1 className="text-4xl md:text-5xl font-bold">Our Projects</h1>

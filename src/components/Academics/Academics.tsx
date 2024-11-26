@@ -1,15 +1,28 @@
 import React from 'react';
+import Football from "../../pictures/Football.jpeg"
+import Football2 from "../../pictures/Football2.jpeg"
+import Computer1 from "../../pictures/Computer_1.jpeg"
+import Computer2 from "../../pictures/Computer_2.jpeg"
 
 const Academics: React.FC = () => {
     return (
         <div className="bg-gray-50 min-h-screen">
             {/* Header Section */}
             <header className="bg-gray-300 h-[300px] flex items-center justify-center text-center relative">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: `url(${Football2})`,
+                        filter: "blur(2px)",
+                    }}></div>
+
+                <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
                 <div className="relative z-10 text-white">
                     <h1 className="text-4xl md:text-5xl font-bold">Academics</h1>
                     <p className="mt-4 max-w-xl mx-auto text-lg">
-                        Explore our academic programs and extra-curricular activities designed to develop holistic education.
+                        Explore our academic programs and extra-curricular activities designed to develop holistic
+                        education.
                     </p>
                 </div>
             </header>
@@ -53,21 +66,34 @@ const Academics: React.FC = () => {
                     <div className="mb-8">
                         <h3 className="text-2xl font-bold text-gray-800 mb-2">Computer Class</h3>
                         <p className="text-gray-600 mb-4">
-                            In times of digitalization it is of extreme importance to be able to understand technology and use it.
+                            In times of digitalization it is of extreme importance to be able to understand technology
+                            and use it.
                         </p>
                         <p className="text-gray-600 mb-4">
-                            Since a laptop still seems like magic to these students we try to approach them step by step.
-                            Starting with basic skills like writing their names or letters using the keyboard. It is a still a big
-                            dream of Brilliant Brains to have a class full of computers so every two students are able to utilize
-                            them by themselves. Currently we are working with three laptops supplied by our volunteers which
-                            leads to shorter times of usage for the children. Regardless it is important that students learn to
-                            use computers because it prepares them for the future whether they pursue careers in technology,
+                            Since a laptop still seems like magic to these students we try to approach them step by
+                            step.
+                            Starting with basic skills like writing their names or letters using the keyboard. It is a
+                            still a big
+                            dream of Brilliant Brains to have a class full of computers so every two students are able
+                            to utilize
+                            them by themselves. Currently we are working with three laptops supplied by our volunteers
+                            which
+                            leads to shorter times of usage for the children. Regardless it is important that students
+                            learn to
+                            use computers because it prepares them for the future whether they pursue careers in
+                            technology,
                             business or any other field.
                         </p>
                         <p className="text-gray-600">
-                            Our current goal is to teach the students to write a CV so that they can pursue the dreams they have
+                            Our current goal is to teach the students to write a CV so that they can pursue the dreams
+                            they have
                             and aren’t stopped by the problems the poverty of our country throws in their direction.
                         </p>
+                        <div className="flex space-x-4">
+                            <img src={Computer1} alt="Computer1" className="rounded-lg shadow-md object-cover w-1/2 h-64" loading="lazy"/>
+                            <img src={Computer2} alt="Computer2" className="rounded-lg shadow-md object-cover w-1/2 h-64" loading="lazy"/>
+                        </div>
+
                     </div>
 
                     {/* Adolescence Club */}
@@ -94,21 +120,29 @@ const Academics: React.FC = () => {
                     <div className="mb-8">
                         <h3 className="text-2xl font-bold text-gray-800 mb-2">Physical Education</h3>
                         <p className="text-gray-600 mb-4">
-                            While playing football and running around is nothing new to our students, we still haven’t been able to implement
-                            it on a regular basis into our everyday life at school. By promoting daily movement in form of dance, games, exercise
+                            While playing football and running around is nothing new to our students, we still haven’t
+                            been able to implement
+                            it on a regular basis into our everyday life at school. By promoting daily movement in form
+                            of dance, games, exercise
                             and stretching with our volunteers, the students learn about the importance of movement.
                         </p>
                         <p className="text-gray-600">
-                            It is one of our priorities to help them develop strong muscles and cardiovascular health together with knowledge about
-                            their own body and its capabilities. We want them capable of knowing how to move their body not only to be fit but to have
-                            it as a coping mechanism. Through sports children learn to work in teams, communicate effectively and develop empathy and
-                            respect for others. Just like that their school lifestyle can become a lot easier since there’s aspects of the day to look forward to and clear the brain.
+                            It is one of our priorities to help them develop strong muscles and cardiovascular health
+                            together with knowledge about
+                            their own body and its capabilities. We want them capable of knowing how to move their body
+                            not only to be fit but to have
+                            it as a coping mechanism. Through sports children learn to work in teams, communicate
+                            effectively and develop empathy and
+                            respect for others. Just like that their school lifestyle can become a lot easier since
+                            there’s aspects of the day to look forward to and clear the brain.
                         </p>
+                        <img src={Football} alt="Football" className="rounded-lg shadow-mt"
+                             loading="lazy"/>
                     </div>
 
                     {/* Book Club */}
                     <div className="mb-8">
-                        <h3 className="text-2xl font-bold text-gray-800 mb-2">Book Club</h3>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2">Book Club</h3>
                         <p className="text-gray-600 mb-4">
                             A book club for our children is important because it encourages a love of reading, fosters critical thinking and enhances comprehension skills.
                         </p>
