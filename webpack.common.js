@@ -1,11 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: 'bundle.[contenthash].js', // Add content hashing for production caching
         publicPath: '/',
     },
     resolve: {
@@ -23,15 +24,16 @@ module.exports = {
                 use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,  // Regex to match image extensions
-                type: 'asset/resource',           // Use asset/resource to emit a file
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: 'asset/resource',
                 generator: {
-                    filename: 'images/[name][hash][ext]', // Customize the output path
+                    filename: 'images/[name][hash][ext]',
                 },
             },
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
             filename: 'index.html',
