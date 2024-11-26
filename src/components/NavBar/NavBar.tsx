@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
         <nav className="sticky top-0 w-full z-50 bg-white shadow-md">
             <div className="container mx-auto flex items-center justify-between p-4">
                 {/* Logo */}
-                <Link to="/home" className="flex items-center">
+                <Link to="/home" className="flex items-center m-4">
                     <img src={Logo} alt="Logo" className="h-10 w-auto mr-2" />
                 </Link>
 
@@ -44,11 +44,14 @@ const NavBar: React.FC = () => {
 
                         {/* Dropdown Menu */}
                         {dropdownOpen && (
-                            <div className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg rounded">
+                            <div
+                                className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 shadow-lg rounded">
                                 <ul className="py-2">
                                     <li>
-                                        <Link to="/about/staff" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Staff</Link>
-                                        <Link to="/about/history" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">History</Link>
+                                        <Link to="/about/staff"
+                                              className="block px-4 py-2 hover:bg-gray-100 text-gray-800">Staff</Link>
+                                        <Link to="/about/history"
+                                              className="block px-4 py-2 hover:bg-gray-100 text-gray-800">History</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -59,10 +62,20 @@ const NavBar: React.FC = () => {
                     <Link to="/volunteering" className="hover:text-gray-800">Volunteering</Link>
                 </div>
 
+                {/* Donate Button */}
+                <button
+                    className="hidden md:block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 m-4"
+                    onClick={() => {
+                        window.open("https://www.gofundme.com/f/construction-of-the-new-school-building", "_blank");
+                    }}
+                >
+                    Donate Now
+                </button>
+
                 {/* Mobile Menu Icon */}
                 <div className="flex items-center">
                     <button onClick={toggleMenu} className="md:hidden text-gray-800 focus:outline-none">
-                        {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                        {menuOpen ? <FaTimes size={24}/> : <FaBars size={24}/>}
                     </button>
                 </div>
             </div>
@@ -98,7 +111,18 @@ const NavBar: React.FC = () => {
                             <Link to="/community" className="block py-2 text-center w-full border-b border-gray-300 hover:bg-gray-200" onClick={toggleMenu}>Community</Link>
                         </li>
                         <li className="w-full">
-                            <Link to="/volunteering" className="block py-2 text-center w-full" onClick={toggleMenu}>Volunteering</Link>
+                            <Link to="/volunteering" className="block py-2 text-center w-full border-b border-gray-300 hover:bg-gray-200" onClick={toggleMenu}>Volunteering</Link>
+                        </li>
+                        <li className="w-full flex justify-center">
+                            {/* Donate Button */}
+                            <button
+                                className="block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 m-4"
+                                onClick={() => {
+                                    window.open("https://www.gofundme.com/f/construction-of-the-new-school-building", "_blank");
+                                }}
+                            >
+                                Donate Now
+                            </button>
                         </li>
                     </ul>
                 </div>
