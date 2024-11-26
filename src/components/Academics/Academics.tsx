@@ -1,5 +1,3 @@
-// File: src/components/Academics.tsx
-
 import React from 'react';
 
 const Academics: React.FC = () => {
