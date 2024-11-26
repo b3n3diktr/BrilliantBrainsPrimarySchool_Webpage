@@ -1,12 +1,19 @@
-// File: src/components/History.tsx
-
 import React from 'react';
+import Background from "../../../pictures/Brilliant_Brains_lower.jpg"
 
 const History: React.FC = () => {
     return (
         <div className="bg-gray-50 min-h-screen">
             {/* Page Header */}
             <header className="relative bg-gray-300 h-[300px] flex items-center justify-center text-center">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{
+                        backgroundImage: `url(${Background})`,
+                        filter: "blur(2px)",
+                    }}></div>
+
+                <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative z-10 text-white">
                     <h1 className="text-4xl md:text-5xl font-bold">Our History</h1>

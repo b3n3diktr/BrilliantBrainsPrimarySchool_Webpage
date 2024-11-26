@@ -1,5 +1,3 @@
-// File: src/components/Home.tsx
-
 import React from 'react';
 import Brilliant_Brains from "../../pictures/Brilliant_Brains.jpg";
 
