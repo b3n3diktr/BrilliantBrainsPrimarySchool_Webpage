@@ -21,22 +21,22 @@ const Staff: React.FC = () => {
         <div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:grid-cols-4 mx-auto max-w-7xl p-10">
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Director_Gideon} alt="Director Gideon" className="rounded-lg shadow-mt" />
+                    <img src={Director_Gideon} alt="Director Gideon" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Director Gideon</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={CoDirector_Esther} alt="Co-Director Esther" className="rounded-lg shadow-mt" />
+                    <img src={CoDirector_Esther} alt="Co-Director Esther" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Co-Director Esther</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Headteacher_Daniel} alt="Headteacher Daniel" className="rounded-lg shadow-mt" />
+                    <img src={Headteacher_Daniel} alt="Headteacher Daniel" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Headteacher Daniel</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Tr_Ben} alt="Tr. Ben" className="rounded-lg shadow-mt" />
+                    <img src={Tr_Ben} alt="Tr. Ben" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><h3 className="text-lg font-semibold text-gray-800">Tr. Ben</h3></div>
                     <div className="text-gray-600 italic">
                         <p>“I chose Brilliant Brains because I found it is a good project where I can achieve my dreams!”</p>
@@ -44,7 +44,7 @@ const Staff: React.FC = () => {
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Tr_Janet} alt="Tr. Janet" className="rounded-lg shadow-mt" />
+                    <img src={Tr_Janet} alt="Tr. Janet" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Tr. Janet</a></div>
                     <div className="text-gray-600 italic">
                         <p>“I chose Brilliant Brains because I support the project and I wanted to impact knowledge to the vulnerable children of Brilliant Brains.”</p>
@@ -52,32 +52,32 @@ const Staff: React.FC = () => {
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Tr_Stellah} alt="Tr. Stellah" className="rounded-lg shadow-mt" />
+                    <img src={Tr_Stellah} alt="Tr. Stellah" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Tr. Stellah</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Tr_Patience} alt="Tr. Patience" className="rounded-lg shadow-mt" />
+                    <img src={Tr_Patience} alt="Tr. Patience" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Tr. Patience</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Teacher_Gloria} alt="Teacher Gloria" className="rounded-lg shadow-mt" />
+                    <img src={Teacher_Gloria} alt="Teacher Gloria" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Teacher Gloria</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Tr_Francis} alt="Tr. Francis" className="rounded-lg shadow-mt" />
+                    <img src={Tr_Francis} alt="Tr. Francis" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Tr. Francis</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Volunteer_Caesalie} alt="Volunteer Cäsalie" className="rounded-lg shadow-mt" />
+                    <img src={Volunteer_Caesalie} alt="Volunteer Cäsalie" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Volunteer Cäsalie</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Volunteer_Helen} alt="Volunteer Helen" className="rounded-lg shadow-mt" />
+                    <img src={Volunteer_Helen} alt="Volunteer Helen" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Volunteer Helen</a></div>
                     <div className="text-gray-600 italic">
                         <p>“I wanted to experience the differences of the educational systems while being able to share my love and knowledge with the brilliant brains and in return getting to learn from them.”</p>
@@ -90,22 +90,22 @@ const Staff: React.FC = () => {
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Boys_Patron_Michael} alt="Boys Patron Michael" className="rounded-lg shadow-mt" />
+                    <img src={Boys_Patron_Michael} alt="Boys Patron Michael" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Boys Patron Michael</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Cooking_Chef_Grandma} alt="Cooking Chef Grandma" className="rounded-lg shadow-mt" />
+                    <img src={Cooking_Chef_Grandma} alt="Cooking Chef Grandma" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Cooking Chef Grandma</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={Cook_Robert} alt="Cook Robert" className="rounded-lg shadow-mt" />
+                    <img src={Cook_Robert} alt="Cook Robert" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>Cook Robert</a></div>
                 </div>
 
                 <div className="border shadow p-4 text-center rounded-xl flex flex-col items-center">
-                    <img src={School_Doctor_Susan} alt="School Doctor Susan" className="rounded-lg shadow-mt" />
+                    <img src={School_Doctor_Susan} alt="School Doctor Susan" className="rounded-lg shadow-mt" loading="lazy"/>
                     <div className="p-4"><a>School Doctor Susan</a></div>
                 </div>
             </div>
