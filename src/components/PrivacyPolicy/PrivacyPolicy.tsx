@@ -26,7 +26,7 @@ const PrivacyPolicy: React.FC = () => {
                 </div>
 
                 <div className="mt-6">
-                    <h4 className="text-lg font-semibold text-gray-600">Technical Contact for Data Protection</h4>
+                    <h4 className="text-lg font-semibold text-gray-600">Technical Contact</h4>
                     <p className="text-gray-700">Benedikt Reich</p>
                     <p className="text-gray-700">
                         Email: <a href="mailto:benedikt.reich05@gmail.com" className="text-blue-500 hover:underline">
@@ -53,7 +53,10 @@ const PrivacyPolicy: React.FC = () => {
 
                 <h3 className="text-xl font-semibold text-gray-700 mt-8">4. Data Sharing with Third Parties</h3>
                 <p className="mt-4 text-gray-700">
-                    Personal data will only be shared with third parties if necessary to fulfill a request or due to legal obligations. For donations, please refer to the GoFundMe Privacy Policy, as the donation process is managed exclusively by GoFundMe.
+                    Personal data will only be shared with third parties if necessary to fulfill a request or due to legal obligations.
+                </p>
+                <p>
+                    **Donations via GoFundMe:** Donations are processed exclusively through the external platform GoFundMe. We do not collect or store any data related to the donation process. Please refer to GoFundMe's Privacy Policy for details on how they handle personal data during the donation process.
                 </p>
 
                 <h3 className="text-xl font-semibold text-gray-700 mt-8">5. Data Retention</h3>
