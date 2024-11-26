@@ -1,5 +1,3 @@
-// File: src/components/History.tsx
-
 import React from 'react';
 
 const History: React.FC = () => {
